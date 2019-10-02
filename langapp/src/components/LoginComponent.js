@@ -6,7 +6,7 @@ class Login extends React.Component {
       	return (
       		<p>
       			Login Component
-            </p>
+          </p>
         );
     }
 }
