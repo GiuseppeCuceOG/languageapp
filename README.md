@@ -1,8 +1,7 @@
 # languageapp
 
 1. clone project
-2. cd languegeapp
+2. cd languegeapp/langapp
 3. npm install
-4. cd langapp
-5. yarn start
-6. be happy!
+4. yarn start
+5. be happy!
