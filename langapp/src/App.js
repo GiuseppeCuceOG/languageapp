@@ -1,5 +1,6 @@
 import React from 'react';
-import Card from './components/Card';
+import { BrowserRouter } from 'react-router-dom';
+import Main from './components/MainComponent';
 import './App.css';
 
 
@@ -7,14 +8,13 @@ import './App.css';
 class App extends React.Component {
   
   render() {
-    let dictionary = [
-      {'eng':'good morning', 'rus':'доброе утро', 'ita':'buongiorno', 'fin':'huomenta'}
-    ]
     
     return (
-      <div className="App">
-          <Card dict={dictionary}/>
-      </div>
+      <BrowserRouter>
+        <div className="App">
+          <Main/>
+        </div>
+      </BrowserRouter>
     );
   }
 }
