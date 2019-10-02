@@ -13,10 +13,7 @@ class App extends React.Component {
     
     return (
       <div className="App">
-        
           <Card dict={dictionary}/>
-      
-        
       </div>
     );
   }
