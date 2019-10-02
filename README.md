@@ -4,4 +4,4 @@
 2. cd languegeapp/langapp
 3. npm install
 4. npm start
-5. be happy!
+5. happy coding!
