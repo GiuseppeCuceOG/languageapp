@@ -9,3 +9,8 @@
 .nav-link:hover {
 	color: #fff;
 }
+
+.signup,
+.login {
+	padding: 2em;
+}

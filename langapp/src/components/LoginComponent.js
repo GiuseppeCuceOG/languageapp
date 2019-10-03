@@ -1,5 +1,5 @@
 import React from 'react';
-import { Navbar, NavbarBrand, Nav, NavbarToggler, Collapse, NavItem, Jumbotron, Modal, ModalHeader, ModalBody, Form, FormGroup, Input, Button, Label } from 'reactstrap';
+import { Form, FormGroup, Input, Button, Label } from 'reactstrap';
 
 class Login extends React.Component {
     
@@ -16,15 +16,17 @@ class Login extends React.Component {
 
     render() {      
       	return (
-      		<Form onSubmit={this.handleLogin}>
-      			<FormGroup>
-              <Input type="text" id="username" name="username" placeholder="Username" innerRef={(input) => this.username = input}/>
-            </FormGroup>
-            <FormGroup>
-              <Input type="password" id="password" name="password" placeholder="Passowrd" innerRef={(input) => this.password = input}/>
-            </FormGroup>
-            <Button type="submit" value="submit" className="bg-primary">Login</Button>                        
-          </Form>
+          <div className="login container">
+        		<Form onSubmit={this.handleLogin}>
+        			<FormGroup>
+                <Input type="text" id="username" className="inputLogin" name="username" placeholder="Username" innerRef={(input) => this.username = input}/>
+              </FormGroup>
+              <FormGroup>
+                <Input type="password" id="password" className="inputLogin" name="password" placeholder="Passowrd" innerRef={(input) => this.password = input}/>
+              </FormGroup>
+              <Button type="submit" value="submit" className="bg-primary">Login</Button>                        
+            </Form>
+          </div>
         );
     }
 }
