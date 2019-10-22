@@ -1,0 +1,3 @@
+{"_id":{"$oid":"5dada7b7b8ab7933f1eeb369"},"role":"admin","id_role":"1"}
+{"_id":{"$oid":"5dada802387c1133f1a61676"},"role":"user","id_role":"2"}
+{"_id":{"$oid":"5dada820387c1133f1a61677"},"role":"guest","id_role":"3"}
