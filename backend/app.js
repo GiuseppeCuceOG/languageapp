@@ -1,6 +1,7 @@
 const express = require("express");
 const bodyParser = require("body-parser")
 const mongoose = require("mongoose");
+const wordrouter = require("./routes/wordrouter");
 const session = require("express-session");
 //MongoDB session store for Connect and Express
 const MongoStore = require("connect-mongo")(session);
@@ -29,6 +30,8 @@ app.use(session({
 			ttl:24*60*60
 	})
 }));
+
+app.use("/api", wordrouter);
 
 const port = process.env.PORT || 3001;
 
